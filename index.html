@@ -6,12 +6,14 @@
     <title>Mieszkanix</title>
     <link rel="icon"  href="/img/favicon.ico">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap:wght@200&family=Indie+Flower&display=swap" rel="stylesheet">
 </head>
 <body>
-
         <div class="flexbox-header">
             <div class="logo">
-                <a href="index.html"><img src="/img/logo.JPG" width="105"></a>
+                <a href="index.html"><img src="/img/logo.JPG" width="105" id="logo"></a>
             </div>
             <div class="name"><p><h1>MIESZKANIX</h1></p></div>
             <div class="f"><h1>Featured</h1></div>
@@ -21,6 +23,7 @@
         </div>
 
         <div class="flexbox-container1">  
+            <h2><b>Adresujemy marzenia ???</b></h2>
             <div class="wyszukiwarka">
                 <select id="dropdownList-Flats">
                     <option value="Flats">Flats</option>
@@ -41,36 +44,69 @@
                     <option value="+25km">+25km</option>
                     <option value="+50km">+50km</option>
                 </select>
-                <button type="button" id="button-SEARCH">SEARCH</button>
+                
                 <input type="text" id="inputBox-Privefrom" placeholder="Price from (PLN)">
                 <input type="text" id="inputBox-Priceto" placeholder="Price to (PLN)">
                 <input type="text" id="inputBox-City" placeholder="Area from (m2)">
                 <input type="text" id="inputBox-City" placeholder="Area up to (m2)">
+
+                <button id="button-SEARCH"><b>SEARCH</b></button>
             </div> 
+            
              
         </div>
 
-        <div class="flexbox-container2">  
-               <h2>Featured offers</h2>
+        <div class="flexbox-featured">  
+            <h2>Featured offers</h2><br>
+            <div id="featured">
+               <img src="/img/logo.JPG" width="300" height="200">
+               <img src="/img/logo.JPG" width="300" height="200">
+               <img src="/img/logo.JPG" width="300" height="200">
+               <img src="/img/logo.JPG" width="300" height="200">
+               <img src="/img/logo.JPG" width="300" height="200">
+               <img src="/img/logo.JPG" width="300" height="200">
+            </div>
+            <br><button id="button-View-more"><b>View more</b></button>
         </div>
 
-        <div class="flexbox-container3">  
-               <h2>For sale</h2>
+        <div class="flexbox-For-sale"> 
+                <h2>For sale</h2><br><br><br> 
+                <div class="offer-images">
+                <img src="/img/logo.JPG" width="300" height="200">
+                <img src="/img/logo.JPG" width="300" height="200">
+                <img src="/img/logo.JPG" width="300" height="200">
+                </div>
         </div>
 
-        <div class="flexbox-container4">  
-               <h2>For rent</h2>
+        <div class="flexbox-For-rent">  
+               <h2>For rent</h2><br><br><br>
+               <div class="offer-images">
+               <img src="/img/logo.JPG" width="300" height="200">
+               <img src="/img/logo.JPG" width="300" height="200">
+               <img src="/img/logo.JPG" width="300" height="200">
+               </div>
         </div>
 
         <div class="flexbox-about">  
-            <div><h2>About us</h2></div>
-            <div></div>
+            <div id="AboutUs-text"><h2>About us</h2><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum iure facere impedit iusto facilis maiores voluptatem voluptatum cumque rem excepturi! Omnis rem totam repellendus dolores ratione doloribus nam voluptate debitis dolor similique, ipsa sed eligendi ab corrupti nisi deleniti nesciunt, velit alias iure atque? Minima, labore. Autem, et illo doloremque deserunt fugiat, mollitia provident assumenda suscipit vitae omnis recusandae consequatur nostrum vero adipisci pariatur odio expedita. Necessitatibus id voluptate deleniti aliquid facilis qui neque aliquam cum, error eveniet recusandae fugit quisquam quae accusamus corporis soluta assumenda blanditiis incidunt et hic. Eveniet unde excepturi sint voluptate quos illum possimus quibusdam officia? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis necessitatibus rem saepe quidem, qui ipsum laborum, voluptatum perspiciatis minima nulla tenetur sit ratione ducimus molestias. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non sequi similique cupiditate voluptas provident labore ex distinctio delectus quidem quam, nesciunt minus beatae iusto amet!</div>
+            <div id="AboutUs-image"><img src="/img/logo.JPG" width="400" height="300"></div>
         </div>
 
         <footer id="footer">
-                <div></div>
-                <div></div>
-                <div></div>
+                <div id="contact"><h2>Contact details:</h2><br>Lorem ipsum dolor sietur adiIpsum iure facere impedit iusto facilis maiores voluptatem voluptatum cumque rem excepturi! Omnis rem totam repellendus dolores Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui distinctio modi enim inventore corporis ad excepturi quasi numquam possimus vero veritatis molestias tempore at expedita, vel impedit similique aliquam non!</div>
+                <div id="socials">
+                    <h2>Follow Us:</h2><br>
+                    <div id="socials-icons"><a href="https://www.instagram.com" target="_blank" title="Instagram"><img src="/img/instagram-icon.png" alt="" width="50px"></a>
+                        <a href="https://www.twitter.com" target="_blank" title="Twitter"><img src="/img/x-icon.png" alt="" width="50px"></a>
+                        <a href="https://www.facebook.com" target="_blank" title="F"><img src="/img/fb-icon.png" alt="" width="50px"></a>
+                    </div>
+                </div>
+                <div id ="links">
+                    <b>Mieszkanix by Jakub Bartosik</b><br>
+                    <b>All right reserved</b><br><br>                    
+                    <a href="details">Page details</a><br>
+                    <a href="CMS/dashboard">CMS</a>
+                </div>
         </footer>
 
 </body>
