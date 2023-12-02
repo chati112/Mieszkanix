@@ -1,25 +1,39 @@
 
 * {
     margin: 0;
-
+    scroll-behavior: smooth;
     box-sizing: border-box;
+     padding: 0;
+    text-decoration: none; 
+    
 }
 
 body {
-    
     background: white;
     font-family: 'Asap', sans-serif;
     font-size: large;
 }
 
-#button-EDIT{
+#inputBox-edit-user {
+    background-color: white;
+    padding: 1em;
+	border: 1px solid black;
+	border-radius: 0.2em;
+    width: 27em;
+    height: 3em;
+}
+
+#button-CMS{
     background-color: rgb(0, 0, 0);
     border-radius: 5px;
     cursor: pointer;
     border: 0;
-    height: 550%;
+    height: 2em;
     color: white;
-    font-size: large;
+    font-size: 25px;
+    width: 7em;
+    margin-right: 4px;
+    margin-left: 4px;
 }
 
 table{
@@ -39,13 +53,14 @@ table{
     }
 
 .content{
-    gap: 100px;
+    gap: 30px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 100px;
     flex-direction: column;
+    
 }
 
 .flexbox-header{
@@ -74,6 +89,7 @@ table{
     text-align: bottom;  
     font-family: 'Indie Flower', cursive;
     font-size: x-large;
+    
 }   
 .flexbox-header div.f{
     flex-basis: 10%;
@@ -87,21 +103,23 @@ table{
     flex-basis: 10%;
     
 }
-.flexbox-header div.a{
+.flexbox-header div.a {
+    
+    flex-basis: 10%;
+}
+.flexbox-header div.logout{
     flex-basis: 10%;
     
 }
 
-
-
 .flexbox-header h1 {
-    margin: 0; /* Usuwa domyślne marginesy dla h1 */
+    margin: 0; 
+    color: black;
 }
 
 .flexbox-container1{
     width: 100%;
     height: 500px;
-    border: 2px solid red;
     background-image: linear-gradient(180deg, rgba(30, 30, 30, 0.99) 0%, rgba(30, 30, 30, 0) 100%),url(img/background_image.webp) ;
     align-items: center;
     background-size: cover;
@@ -130,13 +148,16 @@ table{
     color: #999; 
     
   }
-#button-View-more{
-    background-color: rgb(200, 208, 231);
+
+.button-view-more{
+    background-color: #c8d0e7;
     border-radius: 5px;
     cursor: pointer;
     border: 0;
-    height: 7%;
+    margin-top: 15px;
+    height: 30px;
     width: 10%;
+   font-size: medium;
 }
 #button-SEARCH{
     background-color: rgb(200, 208, 231);
@@ -149,22 +170,22 @@ table{
 
 
 
-.flexbox-featured{
+#flexbox-featured{
     align-items: center;
     justify-content: center;
     display: flex;
     width: 100%;
     height: 700px;
     border: 2px solid red;
-    background-color: rgb(247, 242, 233);
+    background-color: white;
     text-align: center;
     flex-direction: column;
-    font-size: large;
+    
 }
 
 
 
-#featured{
+.featured{
     display: grid;
     grid-template-columns: 33% 33% 33%;
     gap: 5px;
@@ -173,21 +194,20 @@ table{
 
 
 
-.flexbox-For-sale{
+#flexbox-For-sale{
     padding: 15px;
     width: 100%;
-    height: 450px;
+    min-height: 450px;
     border: 2px solid red;
     text-align: center;
     align-items: center;
     justify-content: center;
     padding: 70px;
-    
    
 }
-.flexbox-For-rent{
+#flexbox-For-rent{
     width: 100%;
-    height: 450px;
+    min-height: 450px;
     border: 2px solid red;
     
     text-align: center;
@@ -197,30 +217,56 @@ table{
 
 }
 
-.flexbox-about{
+#additional-images {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    gap: 5px;
+    margin: 35px;
+}
+
+.flexbox-about {
     width: 100%;
-    height: 550px;
     border: 2px solid red;
     background-color: rgb(200, 208, 231);
     align-items: center;
     justify-content: center;
     display: flex;
-    padding: 250px;
-    gap:200px;
+    padding: 5%; /* zmniejszone, dostosowane do procentów */
+    gap: 20%; /* zmniejszone, dostosowane do procentów */
+    
 }
 
-.AboutUs-image {
-    width: 300px; 
-    height: 200px; 
-    background-color: #fff; 
-    border: 1px solid #ccc; 
-  }
+#AboutUs-image {
+    flex-basis: 40%; /* ustala bazową szerokość, ale pozwala na zmniejszenie */
+    max-width: 300px; /* maksymalna szerokość */
+    height: auto; /* utrzymuje proporcje obrazka */
+}
 
-.AboutUs-text {
+#AboutUs-text {
     
-    width: 40%;
-    height: 100%;
-  }
+    flex-basis: 40%; /* ustala bazową szerokość, ale pozwala na zmniejszenie */
+    text-align: justify; /* dla lepszego wyświetlania tekstu */
+    padding: 1%; /* opcjonalne wewnętrzne odstępy */
+}
+
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: flex; /* Show only on small screens */
+    }
+
+    .f .s .r .a {
+        display: none;
+    }
+
+    .flexbox-about, .flexbox-featured, .flexbox-For-sale, .flexbox-For-rent  {
+        flex-direction: column;
+        padding: 5% 2%; /* mniejsze paddingi */
+    }
+
+    #AboutUs-image, #AboutUs-text, #footer {
+        flex-basis: 100%; /* zajmuje całą dostępną szerokość */
+    }
+}
 
 #contact{
     width: 20%;
@@ -228,7 +274,7 @@ table{
 
 #socials-icons{
     display: flex;
-    gap: 35px;
+    gap: 25px;
 }
 
 #links {
@@ -239,6 +285,7 @@ table{
 #footer{
     display: flex;
     width: 100%;
+    flex-basis: 40%;
     height: 300px;
     background-color: rgb(215, 215, 215);
     align-items: center;
