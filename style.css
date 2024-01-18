@@ -1,0 +1,411 @@
+
+* {
+    margin: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    padding: 0;
+    text-decoration: none; 
+    
+}
+
+
+
+body {
+    background: white;
+    font-family: 'Asap', sans-serif;
+    font-size: large;
+    min-width: 200px;
+}
+
+#inputBox-edit-user {
+    background-color: white;
+    padding: 1em;
+	border: 1px solid black;
+	border-radius: 0.2em;
+    width: 27em;
+    height: 3em;
+}
+
+#button-CMS{
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+    cursor: pointer;
+    border: 0;
+    height: 2em;
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    width: 14em;
+    margin-right: 4px;
+    margin-left: 4px;
+}
+
+
+
+table{
+    width: 50%; 
+    border-collapse: collapse; 
+    
+    }
+
+    th, td {
+    padding: 20px;
+    border: 1px solid #ddd; 
+    text-align: center;
+    }
+
+    thead {
+    background-color: #eeeeee;
+    }
+
+.profile-container{
+        margin: 0 auto;
+        display: flex;
+        gap: 2em;
+        font-size: 1rem;
+        padding: 2em;
+        
+    
+}
+
+.content{
+    gap: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    flex-direction: column;
+    
+}
+
+.flexbox-header{
+    width: 100%; 
+    height: 90px;
+    align-items: center;
+    justify-content: center;
+    background: rgb(200, 208, 231);
+    display: flex;
+    gap:5vw;
+    position: sticky;
+    top:0;
+    z-index: 10;
+}
+
+.flexbox-header h1{
+    font-size: 1.5vw;
+}
+
+
+
+.flexbox-header div.logout{
+    flex-basis: 10%;
+    
+}
+
+.flexbox-header h1 {
+    margin: 0; 
+    color: black;
+}
+
+.flexbox-container1{
+    width: 100%;
+    height: 500px;
+    background-image: linear-gradient(180deg, rgba(30, 30, 30, 0.99) 0%, rgba(30, 30, 30, 0) 100%),url(img/background_image.webp) ;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    color: white;
+
+}
+
+.wyszukiwarka{
+    
+    height: 40%;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 25% 25% 20% 20% ;
+    gap:20px;
+    border-radius: 5px;
+    justify-content: center;
+    padding: 25px;
+}
+
+.wyszukiwarka input[type='text'] {
+    color: #999; 
+    
+  }
+
+.button-main{
+    background-color: #c8d0e7;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 0;
+    margin-top: 15px;
+    height: 30px;
+    width: 180px;
+    font-size: medium;
+    font-weight: 700;
+}
+#button-SEARCH{
+    background-color: rgb(200, 208, 231);
+    border-radius: 5px;
+    cursor: pointer;
+    border: 0;
+    grid-column: 1/5;
+    height: 120%;
+}
+
+
+
+#flexbox-featured{
+    padding: 15px;
+    width: 100%;
+    min-height: 450px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 70px;
+    flex-direction: column;
+    
+}
+
+.featured{
+    display: flex;
+    justify-content: center;
+    gap: 0.25vw;
+    flex-wrap: wrap;
+
+}
+
+
+
+#flexbox-For-sale{
+    padding: 15px;
+    width: 100%;
+    min-height: 450px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 70px;
+    flex-direction: column;
+}
+
+.offer-images {
+    display: flex;
+    justify-content: center;
+    gap: 0.25vw;
+    flex-wrap: wrap;
+}
+
+#additional-images-sale {
+    display: none; 
+    justify-content: center;
+    gap: 20px;
+    justify-content: center;
+}
+
+#flexbox-For-rent{
+    width: 100%;
+    min-height: 450px; 
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+
+}
+
+#additional-images-rent {
+    display: flex;
+    gap: 1vw;
+    margin: 1vh;
+    
+}
+
+.flexbox-about {
+    width: 100%;
+    background-color: rgb(200, 208, 231);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+#about-us-img-1 {
+    
+    margin: 5vw;
+}
+#AboutUs-text {  
+    text-align: center; 
+    margin: 25px;
+}
+
+
+
+
+#footer{
+    
+    width: 100%;
+    height: fit-content;
+    background-color: rgb(215, 215, 215);
+    display: flex; 
+    flex-wrap: wrap; 
+    
+    text-align: center;
+    
+    
+    
+}
+
+#socials{
+    white-space: nowrap;
+    width: 33vw;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 3vw;
+    border: 1px solid black;
+}
+
+#contact-form{
+    white-space: nowrap; 
+    width: 33vw;
+    background-color: rgb(215, 215, 215);
+    padding: 1em;
+	border-radius: 0.2em;
+    border: 1px solid red;
+}
+
+#links {
+    width: 33vw;
+    line-height: 1.5;
+   
+    text-align: center;  
+    padding: 3vw;
+    border: 1px solid black;
+}
+@media only screen and (max-width: 1340px) {
+    #about-us-img-2 {
+        display: none;
+    }
+    #inputBox-edit-user
+    {
+        width: 20em;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    .wyszukiwarka {
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: auto auto; 
+        height: auto; 
+    }
+
+    #inputBox-Price-from, #inputBox-Price-to, #inputBox-Area-from, #inputBox-Area-to, #dropdownList-Km{
+        display: none; 
+    }
+
+    #dropdownList-Flats, #dropdownList-ForSale, #inputBox-City {
+        grid-column: span 2; 
+    }
+
+    #dropdownList-Flats, #dropdownList-ForSale {
+        grid-row: 1; 
+    }
+
+    #inputBox-City {
+        grid-column: 1 / -1; 
+        grid-row: 2;
+    }
+    .wyszukiwarka {
+        width: 70%;
+        
+    }
+    #footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    #contact-form{
+        width: fit-content
+    }
+    #socials{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: fit-content;
+    }
+    #links{
+        width: fit-content;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .flexbox-header h1 {
+        font-size: 12px; 
+    }
+    .flexbox-header img {
+        max-width: 100%;
+        height: auto;
+        width: 100%;
+    }
+    .flexbox-container1 h2 {
+        font-size: 19px;
+    }
+    .wyszukiwarka {
+        width: 70%;
+        
+    }
+    #about-us-img-1 {
+        width: 70%;
+    }
+    #inputBox-edit-user
+    {
+        width: 15em;
+    }
+    
+    
+}
+
+@media only screen and (max-width: 320px) {
+    .flexbox-header h1 {
+        font-size: 10px; 
+    }
+
+    .flexbox-header{
+        height: 70px;
+    }
+    .flexbox-header img{
+        width: auto;
+    }
+    .flexbox-about {
+        font-size: 10px;
+        padding: 0%;
+    }
+    .flexbox-container1 h2 {
+        font-size: 16px;
+    }
+    .wyszukiwarka {
+        width: 80%;
+    }
+    #image-featured-5, #image-featured-4 {
+        display: none;
+    }
+    #AboutUs-text{
+
+        width: 100%;
+    }
+    #inputBox-edit-user
+    {
+        width: 12em;
+    }
+    
+    
+}
+
+
+
+
