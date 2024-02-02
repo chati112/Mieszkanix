@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>edit-user</title>
-    <link rel="icon"  href="/img/favicon.ico">
+    <link rel="icon"  href="../img/favicon.ico">
     <link rel="stylesheet" href="../style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,19 +13,35 @@
 
 <body>
     <div class="flexbox-header">
-        <div class="logo">
-            <a href="../index.html"><img src="/img/logo.JPG" width="105" id="logo"></a>
-        </div>
-        <div class="name"><p><h1>MIESZKANIX</h1></p></div>
-        <div class="f"><h1>Posts</h1></div>
-        <div class="s"><h1>Users</h1></div>
-        <div class="r"><h1>Statistics </h1></div>
-        <div class="a"><h1>Profile</h1></div>        
+        <a href="../index.html"><img src="../img/logo.JPG" width="290" id="logo" alt="logo"></a>
+        <a href="posts.html"><h1>Posts</h1></a> 
+        <a href="users.html"><h1>Users</h1></a>
+        <a href="statistics.html"><h1>Statistics</h1></a>
+        <a href="profile.html"><h1>Profile</h1></a> 
+        <a href="../index.html"><h1>Logout</h1></a>         
     </div>
     <div class="content">
-        
-
-    </div>
-
+        <h2>Edit user form</h2>
+        <form action="users.html">
+            <p>
+                <label for="first-name">First Name:</label><br>
+                <input type="text" id="first-name" class="inputBox-edit-user"  required>
+            </p><br>
+            <p>
+                <label for="last-name">Last Name:</label><br>
+                <input type="text" id="last-name" class="inputBox-edit-user" required>
+            </p><br>
+            <p>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" class="inputBox-edit-user"  required>
+            </p><br>
+            <p>
+                <label for="phone">Phone:</label><br>
+                <input type="tel" id="phone" class="inputBox-edit-user" required>
+            </p><br>
+            <input type="submit" class="button-edit" value="Edit">
+        </form> 
+             
+    </div>       
 </body>
 </html>

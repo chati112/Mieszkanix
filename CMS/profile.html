@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Statistics</title>
-    <link rel="icon"  href="/img/favicon.ico">
+    <link rel="icon"  href="../img/favicon.ico">
     <link rel="stylesheet" href="../style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,27 +13,31 @@
 
 <body>
     <div class="flexbox-header">
-        <div class="logo">
-            <a href="../index.html"><img src="/img/logo.JPG" width="105" id="logo"></a>
-        </div>
-        <div class="name"><p><h1>MIESZKANIX</h1></p></div>
-        <div class="f"><a href="posts.html"><h1>Posts</h1></a> </div>
-        <div class="s"><a href="users.html"><h1>Users</h1></a></div>
-        <div class="r"><a href="statistics.html"><h1>Statistics</h1></a></div>
-        <div class="a"><a href="#"onclick="refreshPage()"><h1>Profile</h1></a></div> 
-        <div class="logout"><a href="../index.html"><h1>Logout</h1></a></div>       
+        <a href="../index.html"><img src="../img/logo.JPG" width="290" id="logo" alt="logo"></a>
+        <a href="posts.html"><h1>Posts</h1></a> 
+        <a href="users.html"><h1>Users</h1></a>
+        <a href="statistics.html"><h1>Statistics</h1></a>
+        <a href="profile.html"><h1>Profile</h1></a> 
+        <a href="../index.html"><h1>Logout</h1></a>         
     </div>
     
-    <div class="content">
+    <div class="content" >
         <h1><b>Profile</b></h1>
         <div class="profile-container">
-            <img src="/img/logo.JPG" width="150" height="150">
-            <h2>Scott Marks</h2>
-            <p>
-                
-                jhondoe@gmail.com
-            </p>
-            <a href="edit-user.html"><button id="button-CMS"><b>Edit</b></button></a>
+            
+            <div id="profile-img">
+                <img src="../img/avatar.png" width="150" height="150" alt="profile-avatar.png">
+            </div>
+            <div id="profile-details">
+                <h2>John Doe</h2><br>
+                <p>johndoe@gmail.com </p><br>
+                <p>123 321 123 </p><br>
+                <p>Lorem ipsum dolor sit amet consectetur </p>
+                <p>adipisicing elit.</p>
+                <p>Delectus, cupiditate.</p> 
+             <br>
+             <a href="edit-user.html" class="button-CMS"><b>Edit</b></a>
+            </div>
         </div>
 
     </div>
