@@ -10,7 +10,8 @@ Strona powitalna (index.html)
 
 - sekcja "About Us" z informacjami na temat właściciela serwisu
   
-<head>:![www manticore uni lodz pl_~jbartos_index html (1)](https://github.com/chati112/Mieszkanix/assets/133596038/fcfe0f95-809c-4ed7-8bab-93eacb551021)
+![www manticore uni lodz pl_~jbartos_index html (1)](https://github.com/chati112/Mieszkanix/assets/133596038/b084d0f9-4f63-43e6-87f0-ab736b5be36a)
+
 
 - Stopka z formularzem kontaktowym, odnośnikami do social media i linkami do strony informacyjnej i CMS
 
