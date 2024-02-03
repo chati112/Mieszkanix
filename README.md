@@ -1,73 +1,44 @@
-"Mieszkanix" Service Specification
-Designed for searching and viewing listings of apartments, houses, rooms, and plots for sale and rent. It is adapted to various screen sizes and devices. The target group is users looking for or having properties to purchase/rent.
+"Mieszkanix" 
+Zaprojektowana do wyszukiwania i przeglądania ofert mieszkań, domów, pokoi i działek na sprzedaż oraz wynajem. Jest przystosowana do różnych rozmiarów ekranów i urządzeń. Grupą docelową są użytkownicy szukający lub mający nieruchomości do zakupu/wynajęcia. 
 
-Website Structure (index.html)
+Strona powitalna (index.html)
+- nawigacja
+- okno wyszukiwania ofert
+- 3 sekcje z ogłoszeniami nieruchomości
 
-<head>:
-Meta tags (charset, viewport).
-Title: "Mieszkanix".
-Link to favicon.
-Link to the CSS style sheet.
-Links to Google Fonts.
-<body>:
-Header: Contains the logo and links to different sections of the site.
-Search Engine: Enables filtering of offers based on property type, transaction type, location, price, and size.
-Offer Sections:
-Featured Offers: Selected offers.
-For Sale: Offers for sale.
-For Rent: Rental offers.
-About Us: Information section about the company.
-Footer: Contains a contact form, links to social media, and legal information.
-Footer
-Contact Form:
+![www manticore uni lodz pl_~jbartos_index html](https://github.com/chati112/Mieszkanix/assets/133596038/0d6ce9e1-24a9-4ceb-88b9-9cf05897f4cb)
 
-Enables users to contact the site administrator.
-Contains fields for entering email address and message.
-"Submit" button is used to send the form.
-Social Media Links:
+- sekcja "About Us" z informacjami na temat właściciela serwisu
+  
+<head>:![www manticore uni lodz pl_~jbartos_index html (1)](https://github.com/chati112/Mieszkanix/assets/133596038/fcfe0f95-809c-4ed7-8bab-93eacb551021)
 
-Redirects to the service's profiles on Instagram, Twitter, and Facebook.
-Social media icons are clickable and open in a new tab, thanks to the target="_blank" attribute.
-Legal Information and Additional Links:
+- Stopka z formularzem kontaktowym, odnośnikami do social media i linkami do strony informacyjnej i CMS
 
-"Mieszkanix by Jakub Bartosik" and copyright information.
-Links to additional pages: "Page details" and "CMS".
-JavaScript Scripts
-Expanding Additional Images in "For Sale" and "For Rent" Sections:
+![www manticore uni lodz pl_~jbartos_index html (2)](https://github.com/chati112/Mieszkanix/assets/133596038/0d986216-51ff-497d-9b1a-32dd759a700d)
 
-Clicking the "View More" button in the "For Sale" section makes additional images visible, and the button disappears.
-A similar functionality is implemented for the "For Rent" section.
-Use addEventListener to listen for click events on buttons.
-User Interactions
 
-Search Buttons: Activate filtering of offers based on selected criteria.
-"View More" Buttons: Expand the list of offers for sale and rent.
-Header Links: Allow quick scrolling to selected sections of the page.
-Contact Form: Allows users to send an email message.
-SEO and Optimization
-
-Use of semantic HTML tags.
-Descriptive alt tags for images.
-Inclusion of meta tags for better visibility in search engines.
-Styling (style.css)
-
-Global Styles: Settings for the entire document (margin, padding, box-sizing).
-Structural Elements:
-Header: Style and positioning.
-Sections: Appearance, background color, size, and placement.
-Responsiveness: Using media queries, the page adjusts to different screen sizes (e.g., column layout, text size).
 CMS
+•	Do CMS uzyskamy dostęp poprzez link w stopce strony głównej. Wypełniając formularz logowania trafiamy do pliku statistics.html znajdującego się w folderze CMS. 
+![image](https://github.com/chati112/Mieszkanix/assets/133596038/ba96187e-74cf-445c-a584-eb5644f53e87)
 
-Access to CMS is through a link in the footer of the homepage. By filling out the login form, we are directed to the statistics.html file located in the CMS folder.
+•	W nagłówku mamy 4 zakładki (posts, users, statistics, profile) które odpowiednio przenoszą nas na kolejne strony, a także zakładkę  „Logout”, która pozwala powrócić na stronę główną.
+![image](https://github.com/chati112/Mieszkanix/assets/133596038/4fbf6de5-e843-4eee-80a5-63c85c3d1af3)
+![image](https://github.com/chati112/Mieszkanix/assets/133596038/6f8a40e0-e6eb-4de6-8ee8-aee0ab7493a9)
+![image](https://github.com/chati112/Mieszkanix/assets/133596038/42e92c7f-f018-4d11-b151-e65d28698c64)
+![image](https://github.com/chati112/Mieszkanix/assets/133596038/12c2af4d-cd59-4ef6-b715-a5e015cda6e9)
 
-The header has 4 tabs (posts, users, statistics, profile) that respectively take us to the next pages, as well as a "Logout" tab, which allows returning to the homepage.
+•	Poprzez CMS możemy też edytować wybranych użytkowników lub posty wystarczy tylko kliknąć przycisk „Edit” w odpowiednim wierszu tabeli. 
 
-Through the CMS, we can also edit selected users or posts; just click the "Edit" button in the corresponding table row.
+![www manticore uni lodz pl_~jbartos_CMS_edit-post html](https://github.com/chati112/Mieszkanix/assets/133596038/eecc4800-be05-4660-8e75-87277b2ccab8)
 
-Additional Remarks:
-All pages use a style sheet defined in the "style.css" file.
-Images used on the pages are free graphics created using DALL-E.
-The pages contain information about the author in the details.html file, including the album number, year and subject of study, as well as the browser version under which the service was tested.
+![www manticore uni lodz pl_~jbartos_CMS_edit-user html](https://github.com/chati112/Mieszkanix/assets/133596038/db5e9776-61f8-436c-a42e-56ce84c63b89)
+
+Uwagi Dodatkowe:
+Wszystkie strony korzystają z arkusza stylów zdefiniowanego w pliku "style.css".
+Zdjęcia użyte na stronach to darmowe grafiki utworzone za pomocą DALL-E.
+Strony zawierają informacje o autorze w pliku details.html, obejmujące numer albumu, rok i przedmiot studiów, a także wersję przeglądarki pod jaką serwis był testowany.
+![image](https://github.com/chati112/Mieszkanix/assets/133596038/1ddac7b4-8b80-4c01-a226-5e98c3a1f354)
+
 
 
 
