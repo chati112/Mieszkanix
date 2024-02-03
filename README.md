@@ -14,12 +14,13 @@ Strona powitalna (index.html)
 
 
 - Stopka z formularzem kontaktowym, odnośnikami do social media i linkami do strony informacyjnej i CMS
+- 
 ![www manticore uni lodz pl_~jbartos_index html (3)](https://github.com/chati112/Mieszkanix/assets/133596038/2a546249-81a1-417a-86c2-b1027307d9dd)
 
 
 
 CMS
-•	Do CMS uzyskamy dostęp poprzez link w stopce strony głównej. Wypełniając formularz logowania trafiamy do pliku statistics.html znajdującego się w folderze CMS. 
+Do CMS uzyskamy dostęp poprzez link w stopce strony głównej. Wypełniając formularz logowania trafiamy do pliku statistics.html znajdującego się w folderze CMS. 
 ![image](https://github.com/chati112/Mieszkanix/assets/133596038/ba96187e-74cf-445c-a584-eb5644f53e87)
 
 •	W nagłówku mamy 4 zakładki (posts, users, statistics, profile) które odpowiednio przenoszą nas na kolejne strony, a także zakładkę  „Logout”, która pozwala powrócić na stronę główną.
@@ -38,6 +39,7 @@ Uwagi Dodatkowe:
 Wszystkie strony korzystają z arkusza stylów zdefiniowanego w pliku "style.css".
 Zdjęcia użyte na stronach to darmowe grafiki utworzone za pomocą DALL-E.
 Strony zawierają informacje o autorze w pliku details.html, obejmujące numer albumu, rok i przedmiot studiów, a także wersję przeglądarki pod jaką serwis był testowany.
+
 ![image](https://github.com/chati112/Mieszkanix/assets/133596038/1ddac7b4-8b80-4c01-a226-5e98c3a1f354)
 
 
