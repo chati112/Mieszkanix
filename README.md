@@ -14,8 +14,8 @@ Strona powitalna (index.html)
 
 
 - Stopka z formularzem kontaktowym, odnośnikami do social media i linkami do strony informacyjnej i CMS
+![www manticore uni lodz pl_~jbartos_index html (3)](https://github.com/chati112/Mieszkanix/assets/133596038/2a546249-81a1-417a-86c2-b1027307d9dd)
 
-![www manticore uni lodz pl_~jbartos_index html (2)](https://github.com/chati112/Mieszkanix/assets/133596038/0d986216-51ff-497d-9b1a-32dd759a700d)
 
 
 CMS
